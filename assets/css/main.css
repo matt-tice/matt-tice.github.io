@@ -1210,6 +1210,12 @@ input[type="radio"] + label:before {
   .icon.brands:before {
     font-family: 'Font Awesome 5 Brands'; }
 
+/* Email */
+
+.email {
+  text-align: right;	
+}
+
 /* Image */
 .image {
   border-radius: 0.375em;
