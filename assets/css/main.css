@@ -2089,11 +2089,19 @@ button,
     color: inherit;
     font-family: "Roboto Slab", serif;
     font-size: 1.125em; }
+
+	#header .name {
+		color: inherit;
+		font-family: "Roboto Slab", serif;
+		font-size: 1.125em;
+		font-weight: 600;
+	}
   #header .email {
   	text-align: right;
-	color: inherit;
+		color: inherit;
     font-family: "Roboto Slab", serif;
-	font-size: 1.125em;
+		font-size: 1.125em;
+		font-weight: 600;
 }	
   #header .icons {
     text-align: right; }
