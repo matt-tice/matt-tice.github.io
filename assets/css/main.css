@@ -1215,6 +1215,7 @@ input[type="radio"] + label:before {
 .email {
   	text-align: right;
     font-family: 'Font Awesome 5 Free';
+	font-weight: bold
 }	
 
 /* Image */
