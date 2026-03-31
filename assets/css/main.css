@@ -1210,14 +1210,6 @@ input[type="radio"] + label:before {
   .icon.brands:before {
     font-family: 'Font Awesome 5 Brands'; }
 
-/* Email */
-
-.email {
-  	text-align: right;
-    font-family: 'Font Awesome 5 Free';
-	font-weight: bold
-}	
-
 /* Image */
 .image {
   border-radius: 0.375em;
@@ -2097,6 +2089,12 @@ button,
     color: inherit;
     font-family: "Roboto Slab", serif;
     font-size: 1.125em; }
+  #header .email {
+  	text-align: right;
+	color: inherit;
+    font-family: "Roboto Slab", serif;
+	font-size: 1.125em;
+}	
   #header .icons {
     text-align: right; }
   @media screen and (max-width: 1680px) {
