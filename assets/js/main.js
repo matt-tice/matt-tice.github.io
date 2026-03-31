@@ -260,3 +260,12 @@
 			});
 
 })(jQuery);
+
+
+function copyText(ele_id){
+	var text = document.getElementById(ele_id).innerText;
+
+	navigator.clipboard.writeText(text);
+}
+
+
