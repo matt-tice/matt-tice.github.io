@@ -1213,8 +1213,9 @@ input[type="radio"] + label:before {
 /* Email */
 
 .email {
-  text-align: right;	
-}
+  	text-align: right;
+    font-family: 'Font Awesome 5 Free';
+}	
 
 /* Image */
 .image {
