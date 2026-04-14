@@ -263,29 +263,6 @@
 
 
 
-
-document.getElementById('copy_button').addEventListener('click', async function() {
-  const text = document.getElementById('copy-text').innerText;
-  const copyIcon = document.getElementById('copy-icon');
-  const checkIcon = document.getElementById('check-icon');
-
-  try {
-    await navigator.clipboard.writeText(text);
-    
-    // Switch to checkmark icon
-    copyIcon.classList.add('hidden');
-    checkIcon.classList.remove('hidden');
-
-    // Revert back after 2 seconds
-    setTimeout(() => {
-      copyIcon.classList.remove('hidden');
-      checkIcon.classList.add('hidden');
-    }, 2000);
-  } catch (err) {
-    console.error('Failed to copy: ', err);
-  }
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   
   // 1. Create the main function
