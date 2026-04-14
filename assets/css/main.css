@@ -1517,13 +1517,13 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: #41d0ff; }
+    background-color: #bbeeff; }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: #9161DF;
+    background-color: #68d7ff;
   }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
