@@ -273,8 +273,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const targetId = btn.getAttribute('data-target');
     const textToCopy = document.getElementById(targetId)?.innerText;
-    const copyIcon = btn.getElementById('copy-icon');
-    const checkIcon = btn.getElementById('check-icon');
+    const copyIcon = document.getElementById('copy-icon');
+    const checkIcon = document.getElementById('check-icon');
 
     if (!textToCopy) return;
 
