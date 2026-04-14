@@ -286,3 +286,37 @@ document.getElementById('copy_button').addEventListener('click', async function(
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // 1. Create the main function
+  const handleCopy = async (event) => {
+    // Find the button (even if they clicked the icon inside the button)
+    const btn = event.target.closest('.copy_button');
+    if (!btn) return; // Exit if they didn't click a copy button
+
+    const targetId = btn.getAttribute('data-target');
+    const textToCopy = document.getElementById(targetId)?.innerText;
+    const copyIcon = btn.querySelector('.copy-icon');
+    const checkIcon = btn.querySelector('.check-icon');
+
+    if (!textToCopy) return;
+
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+
+      // Visual Feedback
+      copyIcon.classList.add('hidden');
+      checkIcon.classList.remove('hidden');
+
+      setTimeout(() => {
+        copyIcon.classList.remove('hidden');
+        checkIcon.classList.add('hidden');
+      }, 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  // 2. Attach the listener to the 'document' once
+  document.addEventListener('click', handleCopy);
+});
