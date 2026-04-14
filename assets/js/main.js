@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         copyIcon.classList.remove('hidden');
         checkIcon.classList.add('hidden');
-      }, 2000);
+      }, 1500);
     } catch (err) {
       console.error('Failed to copy:', err);
     }

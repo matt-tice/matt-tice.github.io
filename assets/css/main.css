@@ -1521,10 +1521,12 @@ button,
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
+  /*
   button:active,
   .button:active {
     background-color: #41d0ff;
   }
+    */
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
   input[type="button"].icon:before,
